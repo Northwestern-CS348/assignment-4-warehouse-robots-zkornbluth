@@ -34,7 +34,7 @@
    (:action robotMove
       :parameters (?r - robot ?old - location ?new - location)
       :precondition (and (at ?r ?old) (connected ?old ?new) (no-robot ?new))
-      :effect (and (at ?r ?new) (no-robot ?old) (not (no-robot ?new)) (not (at ?r ?old))
+      :effect (and (at ?r ?new) (no-robot ?old) (not (no-robot ?new)) (not (at ?r ?old)))
    )
 
    (:action robotMoveWithPallette
